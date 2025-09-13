@@ -1,10 +1,10 @@
 // src/components/PersonalProfile.js
 export default function PersonalProfile() {
   return (
-    <section className="mt-24 mb-20">
+    <section className="mt-20 mb-20">
           <p className="text-xl md:text-2xl leading-relaxed max-w-4xl" 
              style={{ 
-               fontFamily: 'Playfair Display, Georgia, serif',
+               fontFamily: 'Montserrat, Georgia, serif',
                lineHeight: '1.8',
                fontWeight: '400',
                letterSpacing: '0.5px'
