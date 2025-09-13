@@ -28,7 +28,8 @@ export default function LatestPhotos() {
 
   return (
     <section className="mb-16">
-      <h2 className="text-2xl font-light mb-8 tracking-wide">Latest</h2>
+      <h2 className="text-2xl font-light mb-8 tracking-wide" 
+      style={{ fontFamily: 'Georgia, serif' }}>Latest</h2>
       
       {/* Latest Photos Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
