@@ -6,8 +6,8 @@ export default function ViewAllButton() {
     <button 
       className="px-8 py-3 rounded-lg transition-all duration-300 text-lg hover:transform hover:-translate-y-1 hover:shadow-lg"
       style={{
-        fontFamily: 'Inter, system-ui, sans-serif',
-        fontWeight: '500',
+        fontFamily: 'Georgia, serif',
+        fontWeight: '400',
         letterSpacing: '0.5px',
         backgroundColor: '#d1d5db',
         color: '#374151',

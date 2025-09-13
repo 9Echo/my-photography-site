@@ -110,6 +110,16 @@ export default function Navigation() {
                   activeTab === key ? 'border-b-2 border-gray-800 font-medium' : ''
                 }`}
                 style={{ fontFamily }}
+                onMouseEnter={(e) => {
+                  if (activeTab !== key) {
+                    e.target.style.tranform = 'translateY(-1px)'
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (activeTab !== key) {
+                    e.target.style.tranform = 'translateY(0)'
+                  }
+                }}
               >
                 {label}
               </button>
@@ -118,7 +128,7 @@ export default function Navigation() {
 
           {/* Language Selector */}
           <div className="relative group">
-            <button className="flex items-center space-x-1 text-gray-600 hover:text-gray-900 transition-colors">
+            <button className="flex items-center space-x-1 text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">
               <span className="font-medium">{languages.find(l => l.code === currentLanguage)?.label}</span>
               <svg className="w-4 h-4 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -131,7 +141,7 @@ export default function Navigation() {
                 <button
                   key={lang.code}
                   onClick={() => handleLanguageChange(lang.code)}
-                  className={`block w-full text-left px-4 py-2 text-sm hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg ${
+                  className={`block w-full text-left px-4 py-2 text-sm hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg transition-colors duration-200 ${
                     currentLanguage === lang.code ? 'bg-gray-100 font-medium' : ''
                   }`}
                 >
