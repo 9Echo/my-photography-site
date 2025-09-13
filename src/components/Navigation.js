@@ -1,4 +1,4 @@
-// src/components/Navigation.js - Fixed version
+// src/components/Navigation.js
 'use client'
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'

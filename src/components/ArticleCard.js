@@ -3,7 +3,7 @@
 
 export default function ArticleCard({ article }) {
   const handleReadMore = () => {
-    window.location.href = `/articles/${article.slug}`
+    window.location.href = `/portfolio/${article.slug}`
   }
 
   const formatDate = (dateString) => {
