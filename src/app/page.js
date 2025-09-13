@@ -14,7 +14,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-8">
         
         {/* Personal Profile Section */}
-        <section className="mt-24 mb-20">
+        <section className="mt-32 mb-20">
           <p className="text-xl md:text-2xl leading-relaxed max-w-4xl" 
              style={{ 
                fontFamily: 'Playfair Display, Georgia, serif',
